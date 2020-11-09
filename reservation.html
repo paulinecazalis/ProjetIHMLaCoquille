@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="CAZALIS Pauline & JORET Eddy">
+    <meta name="description" content="La Coquille est un restaurant 3 étoiles situés à Bidart qui saura vous faire voyager grâce à sa cuisine gastronomique.">
+
+    <title>La Coquille</title>
+    <link rel="icon" type="image/png" href="LogoFinalTrans.png"/>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.0/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./menu.css">
+  </head>
+
+  <body style="overflow-x: hidden;">
+    <header id="header" style="background-color : #2c2c2c">
+
+      <div class="container">
+        <nav class="nav" id="navbar">
+          <div class="menu-wrap">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger">
+              <h4 style="color: #eaba4e; margin-left: 100px; font-family: Cabin, sans-serif; margin-top: 6px; font-weight: bold;">Menu</h4>
+              <div></div>
+            </div>
+            <div class="menu">
+              <div>
+                <div>
+                  <ul>
+                    <li><a href="./index.html" class="nav-link">Accueil</a></li>
+                    <li><a href="./menu.html" class="nav-link">Menus & Carte</a></li>
+                    <li><a href="./reservation.html" class="nav-link active">Réservation</a></li>
+                    <li><a href="./contact.html" class="nav-link">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--<div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+          </div>-->
+          <p style="margin-left: 37%; margin-right: auto; margin-top: 10px;">
+            <a href="index.html" class="logo" id="logo"><img src="images/LogoFinalTrans.png" alt="" style="vertical-align: middle; width: 30%; margin-top: -10px;">La Coquille</a>
+          </p>
+          <ul>
+            <!--<li class="nav-item">
+              <a href="index.html" class="nav-link active">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a href="./menu.html" class="nav-link">Menus & Carte</a>
+            </li>
+            <li class="nav-item">
+              <a href="./reservation.html" class="nav-link">Reservation</a>
+            </li>
+            <li class="nav-item">
+              <a href="./contact.html" class="nav-link">Contact</a>
+            </li>-->
+            <li style="list-style: none;">
+              <img src="./images/DFR.png" style="width: 35px; margin-right: 10px">
+              <img src="./images/DANG.png" style="width: 45px; margin-right: 10px">
+              <img src="./images/DESP.png" style="width: 35px;  margin-right: -20px">
+            </li>
+
+          </ul>
+
+        </nav>
+      </div>
+    </header>
+
+
+    <div id="pageAccueil">
+      <section id="reservation" style="font-family: Montserrat, sans-serif !important; background-color: #fcfcfc;">
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        <h2 class="mb-5 font-weight-bold text-center" style="font-family: 'Cabin', sans-serif; font-size: 3.7rem; text-transform: uppercase; font-weight: 900; letter-spacing: .7rem; margin-right: -.7rem; color: #252525;">Réservation</h2>
+        <div class="asterisk" style="text-align: center"><i class="fa fa-asterisk"></i><i class="fa fa-asterisk"></i><i class="fa fa-asterisk"></i></div>
+        <br>
+        <br>
+        <p style="text-align: center; font-size: 18px;">Pour toute réservation, vous pouvez nous contacter au <b>05.59.88.15.97</b> ou grâce au formulaire de réservation ci-dessous.</p>
+        <p style="text-align: center; font-size: 18px;"><b>Notre équipe vous enverra une confirmation définitive en fonction de nos disponibilités.</b></p>
+        <br>
+        <div class="row">
+          <div class="col-md-5" style="margin-left: 100px;">
+            <form class="p-5 grey-text" method="POST" action="" onsubmit="" >
+              <div class="md-form form-sm">
+                <label for="form3" style="font-size: 18px; font-family: 'Cabin', sans-serif; text-transform: uppercase; font-weight: 900; letter-spacing: .1rem; margin-right: -.7rem; color: #252525;">Nom <b>(*)</b></label>
+                <input placeholder="ex: Dupont"name="nom" type="text" class="form-control input-lg" id="nomcontact" required>
+              </div>
+              <br>
+              <div class="md-form form-sm">
+                <label for="form2" style="font-size: 18px; font-family: 'Cabin', sans-serif; text-transform: uppercase; font-weight: 900; letter-spacing: .1rem; margin-right: -.7rem; color: #252525;">Prénom <b>(*)</b></label>
+                <input placeholder="ex: Jean"name="prenom" type="text" class="form-control input-lg" id="prenomcontact" required>
+              </div>
+              <br>
+              <div class="md-form form-sm">
+                <label for="form34" style="font-size: 18px; font-family: 'Cabin', sans-serif; text-transform: uppercase; font-weight: 900; letter-spacing: .1rem; margin-right: -.7rem; color: #252525;">Téléphone <b>(*)</b></label>
+                <input placeholder="ex: 0102030405"name="tel" type="text" class="form-control input-lg" id="telcontact" required>
+              </div>
+              <br>
+              <div class="md-form form-sm">
+                <label for="form34" style="font-size: 18px; font-family: 'Cabin', sans-serif; text-transform: uppercase; font-weight: 900; letter-spacing: .1rem; margin-right: -.7rem; color: #252525;">Email <b>(*)</b></label>
+                <input placeholder="ex: jeandupont@monadressemail.fr"name="email" type="text" class="form-control input-lg" id="emailcontact" required>
+              </div>
+              <br>
+              <div class="md-form form-sm">
+                <label for="form34" style="font-size: 18px; font-family: 'Cabin', sans-serif; text-transform: uppercase; font-weight: 900; letter-spacing: .1rem; margin-right: -.7rem; color: #252525;">Nombre de personnes <b>(*)</b></label>
+                <input placeholder="ex: 2"name="email" type="number" class="form-control input-lg" id="nbpersonne" min="1"required>
+              </div>
+              <br>
+              <div class="md-form form-sm">
+                <label for="form34" style="font-size: 18px; font-family: 'Cabin', sans-serif; text-transform: uppercase; font-weight: 900; letter-spacing: .1rem; margin-right: -.7rem; color: #252525;">Date de réservation <b>(*)</b></label>
+                <div class="input-group date" id="datetimepicker12" data-target-input="nearest">
+                  <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker12" required/>
+                    <div class="input-group-append" data-target="#datetimepicker12" data-toggle="datetimepicker">
+                      <div class="input-group-text">
+                        <i class="fa fa-calendar"></i>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <br>
+              <div class="md-form form-sm">
+                <label for="form8" style="font-size: 18px; font-family: 'Cabin', sans-serif; text-transform: uppercase; font-weight: 900; letter-spacing: .1rem; margin-right: -.7rem; color: #252525;">Message</label>
+                <textarea name="message" type="text" class="md-textarea form-control input-lg" id="contactmessage" rows="4"></textarea>
+              </div>
+              <div class="text-center mt-4">
+                <p><b>*</b> Champs obligatoires.</p>
+                <button class="btn btn-form" type="button" onclick="validFormContact()" style="background-color: #eaba4e; color: black;">Valider<i class="fas fa-paper-plane"></i></button>
+              </div>
+            </form>
+          </div>
+          <div style="margin-top: 80px; margin-left: 190px;">
+            <h4 style="text-transform: uppercase; font-weight: bold; font-family: 'Cabin', sans-serif; text-transform: uppercase; font-weight: 900; letter-spacing: .4rem; margin-right: -.7rem; color: #252525;">Horaires d'ouvertures :</h4>
+            <br>
+            <div class="asterisk" style="text-align: center"><i class="fa fa-asterisk"></i><i class="fa fa-asterisk"></i><i class="fa fa-asterisk"></i></div>
+            </br>
+            <p>Mardi : 12h-15h - 19h-22h</p>
+            <p>Mercredi : 12h-15h - 19h-22h</p>
+            <p>Jeudi : 12h-15h - 19h-22h</p>
+            <p>Vendredi : 12h-15h - 19h-22h</p>
+            <p>Samedi : 12h-15h - 19h-22h</p>
+            <p>Dimanche : 12h-15h</p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+    <footer>
+      <div class="container">
+        <div class="back-to-top">
+          <a href="#reservation"><i class="fas fa-chevron-up"></i></a>
+        </div>
+        <div class="footer-content">
+          <div class="footer-content-about animate-up">
+            <h4 style="font-family: Cabin, sans-serif;">La Coquille</h4>
+            <p>83 chemin Manchulas</p>
+            <p>64210 BIDART</p>
+            <p>05.59.88.15.97</p>
+            <p>lacoquillebidart@gmail.com</p>
+            <div class="asterisk"><i class="fas fa-asterisk"></i><i class="fa fa-asterisk"></i><i class="fa fa-asterisk"></i></div>
+            <p>La Coquille est un restaurant 3 étoiles situés à Bidart qui saura vous faire voyager grâce à sa cuisine gastronomique.</p>
+          </div>
+          <div class="footer-content-divider animate-bottom">
+            <div class="social-media">
+              <ul class="social-icons">
+                <li>
+                  <a href="./index.html">Accueil</a>
+                </li>
+                <li>
+                  <a href="./menu.html">Menus & Carte</a>
+                </li>
+                <li>
+                  <a href="./reservation.html">Réservation</a>
+                </li>
+                <li>
+                  <a href="./contact.html">Contact</a>
+                </li>
+                <li>
+                  <a href="#">Mentions Légales</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <p style="font-size: 14px;">Conception-Réalisation : CAZALIS Pauline & JORET Eddy</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="text/javascript">
+      $(function () {
+        $('#datetimepicker12').datetimepicker({
+          daysOfWeekDisabled: [1],
+          locale: 'fr',
+          disabledHours: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 15, 16, 17, 18, 23, 24],
+          enabledHours: [12, 13, 14, 19, 20, 21, 22]
+        });
+      });
+      function validFormContact(){
+        if(document.getElementById('nomcontact').value == '' || document.getElementById('prenomcontact').value == '' || document.getElementById('telcontact').value == '' || document.getElementById('emailcontact').value == '' || document.getElementById('nbpersonne').value == '' || document.getElementById('datetimepicker12').value == ''){
+          Swal.fire({
+            icon: 'error',
+            title: 'Erreur!',
+            text: 'Tous les champs ne sont pas remplis.',
+          });
+        }else{
+          Swal.fire(
+            'Merci!',
+            'Votre réservation a bien été prise en compte.',
+            'success'
+          );
+        }
+      }
+
+      const selectElement = function (element) {
+        return document.querySelector(element);
+      }
+
+      var menuToggler = selectElement('.menu-toggle');
+      var body = selectElement('body');
+
+      menuToggler.addEventListener('click', function (){
+        body.classList.toggle('open');
+      });
+
+    </script>
+
+  </body>
+</html>

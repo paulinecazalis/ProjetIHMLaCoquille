@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="CAZALIS Pauline & JORET Eddy">
+    <meta name="description" content="La Coquille est un restaurant 3 étoiles situés à Bidart qui saura vous faire voyager grâce à sa cuisine gastronomique.">
+
+    <title>La Coquille</title>
+    <link rel="icon" type="image/png" href="LogoFinalTrans.png"/>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./menu.css">
+  </head>
+
+  <body style="overflow-x: hidden;">
+    <header id="header" style="background-color : #2c2c2c">
+
+      <div class="container">
+        <nav class="nav" id="navbar">
+          <div class="menu-wrap">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger">
+              <h4 style="color: #eaba4e; margin-left: 110px; font-family: Cabin, sans-serif; margin-top: 6px; font-weight: bold;">Menu</h4>
+              <div></div>
+            </div>
+            <div class="menu">
+              <div>
+                <div>
+                  <ul>
+                    <li><a href="./index.html" class="nav-link">Accueil</a></li>
+                    <li><a href="./menu.html" class="nav-link">Menus & Carte</a></li>
+                    <li><a href="./reservation.html" class="nav-link">Réservation</a></li>
+                    <li><a href="./contact.html" class="nav-link active">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--<div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+          </div>-->
+          <p style="margin-left: 37%; margin-right: auto; margin-top: 10px;">
+            <a href="index.html" class="logo" id="logo"><img src="images/LogoFinalTrans.png" alt="" style="vertical-align: middle; width: 30%; margin-top: -10px;">La Coquille</a>
+          </p>
+          <ul>
+            <!--<li class="nav-item">
+              <a href="index.html" class="nav-link active">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a href="./menu.html" class="nav-link">Menus & Carte</a>
+            </li>
+            <li class="nav-item">
+              <a href="./reservation.html" class="nav-link">Reservation</a>
+            </li>
+            <li class="nav-item">
+              <a href="./contact.html" class="nav-link">Contact</a>
+            </li>-->
+            <li style="list-style: none;">
+              <img src="./images/DFR.png" style="width: 35px; margin-right: 10px">
+              <img src="./images/DANG.png" style="width: 45px; margin-right: 10px">
+              <img src="./images/DESP.png" style="width: 35px;  margin-right: -20px">
+            </li>
+
+          </ul>
+
+        </nav>
+      </div>
+    </header>
+
+    <div id="pageAccueil" style="font-family: Montserrat, sans-serif !important; background-color: #fcfcfc;">
+      <main class="mt-5">
+        <div class="container">
+          <section id="contact">
+            </br>
+            </br>
+            </br>
+            <h2 class="mb-5 font-weight-bold text-center" style="font-family: 'Cabin', sans-serif; font-size: 3.7rem; text-transform: uppercase; font-weight: 900; letter-spacing: .7rem; margin-right: -.7rem; color: #252525;">Contact</h2>
+            <div class="asterisk" style="text-align: center"><i class="fa fa-asterisk"></i><i class="fa fa-asterisk"></i><i class="fa fa-asterisk"></i></div>
+            <br>
+            <div class="row">
+              <div class="col-lg-5 col-md-12 mt-5">
+                <form class="p-5 grey-text" method="POST" action="" onsubmit="" style="margin-left: -100px;" >
+                  <div class="md-form form-sm">
+                    <label for="form3" style="font-size: 18px; font-family: 'Cabin', sans-serif; text-transform: uppercase; font-weight: 900; letter-spacing: .1rem; margin-right: -.7rem; color: #252525;">Nom <b>(*)</b></label>
+                      <input placeholder="ex: Dupont"name="nom" type="text" class="form-control input-lg" id="nomcontact"required>
+                  </div>
+                  <br>
+                  <div class="md-form form-sm">
+                    <label for="form2" style="font-size: 18px; font-family: 'Cabin', sans-serif; text-transform: uppercase; font-weight: 900; letter-spacing: .1rem; margin-right: -.7rem; color: #252525;">Prénom <b>(*)</b></label>
+                    <input placeholder="ex: Jean"name="prenom" type="text" class="form-control input-lg" id="prenomcontact" required>
+                  </div>
+                  <br>
+                  <div class="md-form form-sm">
+                    <label for="form34" style="font-size: 18px; font-family: 'Cabin', sans-serif; text-transform: uppercase; font-weight: 900; letter-spacing: .1rem; margin-right: -.7rem; color: #252525;">Téléphone <b>(*)</b></label>
+                    <input placeholder="ex: 0102030405"name="tel" type="text" class="form-control input-lg" id="telcontact" required>
+                  </div>
+                  <br>
+                  <div class="md-form form-sm">
+                    <label for="form34" style="font-size: 18px; font-family: 'Cabin', sans-serif; text-transform: uppercase; font-weight: 900; letter-spacing: .1rem; margin-right: -.7rem; color: #252525;">Email <b>(*)</b></label>
+                    <input placeholder="ex: jeandupont@monadressemail.fr"name="email" type="text" class="form-control input-lg" id="emailcontact" required>
+                  </div>
+                  <br>
+                  <div class="md-form form-sm">
+                    <label for="form34" style="font-size: 18px; font-family: 'Cabin', sans-serif; text-transform: uppercase; font-weight: 900; letter-spacing: .1rem; margin-right: -.7rem; color: #252525;">Sujet</label>
+                    <input placeholder="ex: reservation"name="sujet" type="text" class="form-control input-lg" id="sujetcontact">
+                  </div>
+                  <br>
+                  <div class="md-form form-sm">
+                    <label for="form8" style="font-size: 18px; font-family: 'Cabin', sans-serif; text-transform: uppercase; font-weight: 900; letter-spacing: .1rem; margin-right: -.7rem; color: #252525;">Votre message <b>(*)</b></label>
+                    <textarea name="message" type="text" class="md-textarea form-control input-lg" id="contactmessage" rows="4" required></textarea>
+                  </div>
+                  <div class="text-center mt-4">
+                    <p><b>*</b> Champs obligatoires.</p>
+                    <button class="btn btn-form" type="button" onclick="validFormContact()" style="background-color: #eaba4e; color: black;">Valider<i class="fas fa-paper-plane"></i></button>
+                  </div>
+                </form>
+              </div>
+              <div class="col-lg-7" style="margin-top: 15px;">
+                <div class="row" style="margin-right: -100px; margin-left: 90px;">
+                  <div class="col-lg-4 col-md-12 mb-3" style="margin-left: -17%">
+                    <p style="font-family: Cabin, sans-serif; font-size: 18px;">
+                      <i class="fa fa-map fa-1x mr-2 grey-text"></i>83 chemin Manchulas
+                    </p>
+                    <p style="font-family: Cabin, sans-serif; font-size: 18px;">64210 BIDART</p>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-3">
+                    <p style="font-family: Cabin, sans-serif; font-size: 18px;">
+                      <i class="fa fa-building fa-1x mr-2 grey-text"></i>Du Mardi au Samedi - 12h-15h 19h-22h
+                    </p>
+                    <p style="font-family: Cabin, sans-serif; font-size: 18px;">Dimanche 12h-15h</p>
+                  </div>
+                  <div class="col-lg-6 col-md-6 mb-3">
+                    <p style="font-family: Cabin, sans-serif; font-size: 18px;">
+                      <i class="fa fa-phone fa-1x mr-2 grey-text"></i>05.59.88.15.97
+                    </p>
+                    <p style="font-family: Cabin, sans-serif; font-size: 18px;">
+                      <i class="fa fa-envelope mr-3"></i> lacoquillebidart@gmail.com
+                    </p>
+                  </div>
+                </div>
+                <div id="map-container" class="z-depth-1-half map-container-6" style="height: 400px">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2896.707360599619!2d-1.572487384790875!3d43.44582747383382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5114ef9715b199%3A0x87cbe2b83d4feb97!2s83%20Chemin%20Manchulas%2C%2064210%20Bidart!5e0!3m2!1sfr!2sfr!4v1601817746243!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <!--Main layout-->
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="back-to-top">
+          <a href="#contact"><i class="fas fa-chevron-up"></i></a>
+        </div>
+        <div class="footer-content">
+          <div class="footer-content-about animate-up">
+            <h4 style="font-family: Cabin, sans-serif;">La Coquille</h4>
+            <p>83 chemin Manchulas</p>
+            <p>64210 BIDART</p>
+            <p>05.59.88.15.97</p>
+            <p>lacoquillebidart@gmail.com</p>
+            <div class="asterisk"><i class="fas fa-asterisk"></i><i class="fa fa-asterisk"></i><i class="fa fa-asterisk"></i></div>
+            <p>La Coquille est un restaurant 3 étoiles situés à Bidart qui saura vous faire voyager grâce à sa cuisine gastronomique.</p>
+          </div>
+          <div class="footer-content-divider animate-bottom">
+            <div class="social-media">
+              <ul class="social-icons">
+                <li>
+                  <a href="./index.html">Accueil</a>
+                </li>
+                <li>
+                  <a href="./menu.html">Menus & Carte</a>
+                </li>
+                <li>
+                  <a href="./reservation.html">Réservation</a>
+                </li>
+                <li>
+                  <a href="./contact.html">Contact</a>
+                </li>
+                <li>
+                  <a href="#">Mentions Légales</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <p style="font-size: 14px;">Conception-Réalisation : CAZALIS Pauline & JORET Eddy</p>
+        </div>
+      </div>
+    </footer>
+
+
+    <script>$(window).scroll(function(){$('nav').toggleClass('scrolled', $(this).scrollTop() > 200);});</script> <!--Pour changer la couleur de la barre quand on scroll-->
+    <script type="text/javascript">
+      function validFormContact(){
+        if(document.getElementById('nomcontact').value == '' || document.getElementById('prenomcontact').value == '' || document.getElementById('telcontact').value == '' || document.getElementById('emailcontact').value == '' || document.getElementById('contactmessage').value == '' ){
+          Swal.fire({
+            icon: 'error',
+            title: 'Erreur!',
+            text: 'Tous les champs ne sont pas remplis.',
+          });
+        }else{
+          Swal.fire(
+            'Merci!',
+            'Votre message a bien été prise en compte. Nous vous répondrons dans les meilleurs délais.',
+            'success'
+          );
+        }
+      }
+    </script>
+    <script type="text/javascript">
+
+
+    const selectElement = function (element) {
+      return document.querySelector(element);
+    }
+
+    var menuToggler = selectElement('.menu-toggle');
+    var body = selectElement('body');
+
+    menuToggler.addEventListener('click', function (){
+      body.classList.toggle('open');
+    });
+
+    </script>
+
+    <!--Google maps settings-->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjzpZRQpHD-8RXlBjVs6alqgy1iR4rXqM&callback=initMap"></script>
+  </body>
+</html>
